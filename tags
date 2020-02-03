@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+N	mux.v	/^	parameter N = 8;$/;"	c
+a	muxtwo.v	/^	input a, b, s;$/;"	p
+b	muxtwo.v	/^	input a, b, s;$/;"	p
+in0	mux.v	/^	input[N:1] in0, in1;$/;"	p
+in1	mux.v	/^	input[N:1] in0, in1;$/;"	p
+mux	mux.v	/^module mux(out, in0, in1, sel);$/;"	m
+muxtwo	muxtwo.v	/^module muxtwo(out, a, b, s);$/;"	m
+out	mux.v	/^	output[N:1] out;$/;"	p
+out	muxtwo.v	/^	output out;$/;"	p
+out	muxtwo.v	/^	reg out;$/;"	r
+s	muxtwo.v	/^	input a, b, s;$/;"	p
+sel	mux.v	/^	input sel;$/;"	p
