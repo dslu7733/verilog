@@ -4,74 +4,126 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-M	function.v	/^	parameter M = 4;$/;"	c
-N	counter.v	/^	parameter N = 4;$/;"	c
-N	function.v	/^	parameter N = 15;$/;"	c
-N	mux.v	/^	parameter N = 8;$/;"	c
-a	muxtwo.v	/^	input a, b, s;$/;"	p
-b	muxtwo.v	/^	input a, b, s;$/;"	p
-cal_num_one	function.v	/^	task cal_num_one;$/;"	t
-cin	counter.v	/^	input reset, cin, clk;$/;"	p
-clk	counter.v	/^	input reset, cin, clk;$/;"	p
+M	simpleExample/function.v	/^	parameter M = 4;$/;"	c
+N	simpleExample/counter.v	/^	parameter N = 4;$/;"	c
+N	simpleExample/function.v	/^	parameter N = 15;$/;"	c
+N	simpleExample/mux.v	/^	parameter N = 8;$/;"	c
+a	simpleExample/muxtwo.v	/^	input a, b, s;$/;"	p
+b	simpleExample/muxtwo.v	/^	input a, b, s;$/;"	p
+cal_num_one	simpleExample/function.v	/^	task cal_num_one;$/;"	t
+cin	simpleExample/counter.v	/^	input reset, cin, clk;$/;"	p
+clk	simpleExample/counter.v	/^	input reset, cin, clk;$/;"	p
 coder10to4	coder/coder10to4.v	/^module coder10to4$/;"	m
-counter	counter.v	/^module counter(q, cout, reset, cin, clk);$/;"	m
-cout	counter.v	/^	output cout;$/;"	p
-data	function.v	/^		input[N:0] data;$/;"	p
-data_one	function.v	/^	reg[N:0] data_one;$/;"	r
-data_two	function.v	/^	reg[N:0] data_two;$/;"	r
+counter	simpleExample/counter.v	/^module counter(q, cout, reset, cin, clk);$/;"	m
+cout	simpleExample/counter.v	/^	output cout;$/;"	p
+d_latch	d_latch.v	/^module d_latch$/;"	m
+d_latch_tb	d_latch_tb.v	/^module d_latch_tb;$/;"	m
+d_trig	d_trig/d_trig.v	/^module d_trig$/;"	m
+d_trig_tb	d_trig/d_trig_tb.v	/^module d_trig_tb;$/;"	m
+data	simpleExample/function.v	/^		input[N:0] data;$/;"	p
+data_one	simpleExample/function.v	/^	reg[N:0] data_one;$/;"	r
+data_two	simpleExample/function.v	/^	reg[N:0] data_two;$/;"	r
 decoder10to4	coder/decoder4to10.v	/^module decoder10to4$/;"	m
-function_app	function.v	/^module function_app();$/;"	m
+demux1to4	demux1to4/demux1to4.v	/^module demux1to4$/;"	m
+demux1to4_tb	demux1to4/demux1to4_tb.v	/^module demux1to4_tb;$/;"	m
+function_app	simpleExample/function.v	/^module function_app();$/;"	m
 gate_construct	gate_construct/gate_construct.v	/^module gate_construct$/;"	m
 gate_construct_tb	gate_construct/gate_construct_tb.v	/^module gate_construct_tb;$/;"	m
-i	function.v	/^		integer i, j;$/;"	r
+i	simpleExample/function.v	/^		integer i, j;$/;"	r
 i_a	gate_construct/gate_construct.v	/^		input i_a,$/;"	p
+i_a	mux4to1/mux4to1.v	/^		input i_a,$/;"	p
 i_c	gate_construct/gate_construct.v	/^		input i_c,$/;"	p
+i_c	mux4to1/mux4to1.v	/^		input i_c,$/;"	p
+i_clk	d_trig/d_trig.v	/^		input i_clk,$/;"	p
 i_data	coder/coder10to4.v	/^		input[9:0] i_data,$/;"	p
 i_data	coder/decoder4to10.v	/^		input[3:0] i_data,$/;"	p
+i_data	demux1to4/demux1to4.v	/^		input i_data,$/;"	p
 i_data	digitalTube/seg_display.v	/^		input[3:0] i_data,$/;"	p
 i_e	gate_construct/gate_construct.v	/^		input i_e,$/;"	p
-in0	mux.v	/^	input[N:1] in0, in1;$/;"	p
-in1	mux.v	/^	input[N:1] in0, in1;$/;"	p
+i_enable	d_latch.v	/^		input i_enable,$/;"	p
+i_enable	d_trig/d_trig.v	/^		input i_enable,$/;"	p
+i_sel	mux4to1/mux4to1.v	/^		input[1:0] i_sel,	\/\/2位的选择信号$/;"	p
+in0	simpleExample/mux.v	/^	input[N:1] in0, in1;$/;"	p
+in1	simpleExample/mux.v	/^	input[N:1] in0, in1;$/;"	p
+input	d_latch.v	/^		input i_d,$/;"	p
+input	d_trig/d_trig.v	/^		input i_clr,$/;"	p
+input	d_trig/d_trig.v	/^		input i_d,$/;"	p
+input	demux1to4/demux1to4.v	/^		input[1:0] i_sel,$/;"	p
 input	digitalTube/seg_display.v	/^		input i_dp,$/;"	p
 input	gate_construct/gate_construct.v	/^		input i_b,$/;"	p
 input	gate_construct/gate_construct.v	/^		input i_d,$/;"	p
-j	function.v	/^		integer i, j;$/;"	r
-mux	mux.v	/^module mux(out, in0, in1, sel);$/;"	m
-muxtwo	muxtwo.v	/^module muxtwo(out, a, b, s);$/;"	m
-num_one	function.v	/^		output[M:0] num_one;$/;"	p
-num_one	function.v	/^	reg[M:0] num_one;$/;"	r
-num_two	function.v	/^	reg[M:0] num_two;$/;"	r
+input	mux4to1/mux4to1.v	/^		input i_b,$/;"	p
+input	mux4to1/mux4to1.v	/^		input i_d,$/;"	p
+j	simpleExample/function.v	/^		integer i, j;$/;"	r
+mux	simpleExample/mux.v	/^module mux(out, in0, in1, sel);$/;"	m
+mux4to1	mux4to1/mux4to1.v	/^module mux4to1$/;"	m
+mux4to1_tb	mux4to1/mux4to1_tb.v	/^module mux4to1_tb;$/;"	m
+muxtwo	simpleExample/muxtwo.v	/^module muxtwo(out, a, b, s);$/;"	m
+num_one	simpleExample/function.v	/^		output[M:0] num_one;$/;"	p
+num_one	simpleExample/function.v	/^	reg[M:0] num_one;$/;"	r
+num_two	simpleExample/function.v	/^	reg[M:0] num_two;$/;"	r
+o_a	demux1to4/demux1to4.v	/^		output o_a,$/;"	p
+o_c	demux1to4/demux1to4.v	/^		output o_c,$/;"	p
+o_q	d_latch.v	/^		output o_q$/;"	p
+o_q	d_trig/d_trig.v	/^		output o_q$/;"	p
 o_seg	digitalTube/seg_display.v	/^		output[6:0] o_seg,$/;"	p
-out	mux.v	/^	output[N:1] out;$/;"	p
-out	muxtwo.v	/^	output out;$/;"	p
-out	muxtwo.v	/^	reg out;$/;"	r
+out	simpleExample/mux.v	/^	output[N:1] out;$/;"	p
+out	simpleExample/muxtwo.v	/^	output out;$/;"	p
+out	simpleExample/muxtwo.v	/^	reg out;$/;"	r
 output	coder/coder10to4.v	/^		output[3:0] o_code$/;"	p
 output	coder/decoder4to10.v	/^		output[9:0] o_decode;$/;"	p
+output	demux1to4/demux1to4.v	/^		output o_b,$/;"	p
+output	demux1to4/demux1to4.v	/^		output o_d$/;"	p
 output	digitalTube/seg_display.v	/^		output o_dp$/;"	p
 output	gate_construct/gate_construct.v	/^		output o_y$/;"	p
-q	counter.v	/^	output[N:1] q;$/;"	p
-q	counter.v	/^	reg[N:1] q;$/;"	r
+output	mux4to1/mux4to1.v	/^		output o_data$/;"	p
+q	simpleExample/counter.v	/^	output[N:1] q;$/;"	p
+q	simpleExample/counter.v	/^	reg[N:1] q;$/;"	r
+r_a	demux1to4/demux1to4.v	/^	reg r_a;$/;"	r
 r_a	gate_construct/gate_construct_tb.v	/^	reg r_a;$/;"	r
+r_b	demux1to4/demux1to4.v	/^	reg r_b;$/;"	r
 r_b	gate_construct/gate_construct_tb.v	/^	reg r_b;$/;"	r
+r_c	demux1to4/demux1to4.v	/^	reg r_c;$/;"	r
 r_c	gate_construct/gate_construct_tb.v	/^	reg r_c;$/;"	r
+r_clk	d_trig/d_trig_tb.v	/^	reg r_clk;$/;"	r
+r_clr	d_trig/d_trig_tb.v	/^	reg r_clr;$/;"	r
 r_cnt	gate_construct/gate_construct_tb.v	/^	reg[4:0] r_cnt;$/;"	r
+r_cnt	mux4to1/mux4to1_tb.v	/^	reg[3:0] r_cnt;$/;"	r
 r_coder	coder/coder10to4.v	/^	reg[3:0] r_coder;$/;"	r
+r_d	d_latch_tb.v	/^	reg r_d;$/;"	r
+r_d	demux1to4/demux1to4.v	/^	reg r_d;$/;"	r
 r_d	gate_construct/gate_construct_tb.v	/^	reg r_d;$/;"	r
+r_data	d_trig/d_trig_tb.v	/^	reg r_data;$/;"	r
+r_data	demux1to4/demux1to4_tb.v	/^	reg r_data;$/;"	r
 r_data	digitalTube/seg_display_tb.v	/^	reg[3:0] r_data;$/;"	r
+r_data	mux4to1/mux4to1.v	/^	reg r_data;$/;"	r
 r_decode	coder/decoder4to10.v	/^	reg[9:0] r_decode;$/;"	r
 r_dp	digitalTube/seg_display_tb.v	/^	reg r_dp;$/;"	r
 r_e	gate_construct/gate_construct_tb.v	/^	reg r_e;$/;"	r
+r_enable	d_latch_tb.v	/^	reg r_enable;$/;"	r
+r_enable	d_trig/d_trig_tb.v	/^	reg r_enable;$/;"	r
+r_q	d_latch.v	/^	reg r_q;$/;"	r
+r_q	d_trig/d_trig.v	/^	reg r_q;$/;"	r
 r_seg	digitalTube/seg_display.v	/^	reg[6:0] r_seg;$/;"	r
-reset	counter.v	/^	input reset, cin, clk;$/;"	p
-s	muxtwo.v	/^	input a, b, s;$/;"	p
+r_sel	demux1to4/demux1to4_tb.v	/^	reg[1:0] r_sel;$/;"	r
+r_sel	mux4to1/mux4to1_tb.v	/^	reg[1:0] r_sel;$/;"	r
+reset	simpleExample/counter.v	/^	input reset, cin, clk;$/;"	p
+s	simpleExample/muxtwo.v	/^	input a, b, s;$/;"	p
 seg_display	digitalTube/seg_display.v	/^module seg_display$/;"	m
 seg_display_tb	digitalTube/seg_display_tb.v	/^module seg_display_tb;$/;"	m
-sel	mux.v	/^	input sel;$/;"	p
-str	string.v	/^	reg[19*8:1] str;$/;"	r
-string_test	string.v	/^module string_test;$/;"	m
+sel	simpleExample/mux.v	/^	input sel;$/;"	p
+str	simpleExample/string.v	/^	reg[19*8:1] str;$/;"	r
+string_test	simpleExample/string.v	/^module string_test;$/;"	m
+w_a	demux1to4/demux1to4_tb.v	/^	wire w_a;$/;"	n
 w_and_o	gate_construct/gate_construct.v	/^	wire w_and_o;$/;"	n
+w_b	demux1to4/demux1to4_tb.v	/^	wire w_b;$/;"	n
+w_c	demux1to4/demux1to4_tb.v	/^	wire w_c;$/;"	n
+w_d	demux1to4/demux1to4_tb.v	/^	wire w_d;$/;"	n
+w_data	mux4to1/mux4to1_tb.v	/^	wire w_data;$/;"	n
 w_dp	digitalTube/seg_display_tb.v	/^	wire w_dp;$/;"	n
+w_o	d_trig/d_trig_tb.v	/^	wire w_o;$/;"	n
 w_or1_o	gate_construct/gate_construct.v	/^	wire w_or1_o;$/;"	n
+w_q	d_latch_tb.v	/^	wire w_q;$/;"	n
 w_seg	digitalTube/seg_display_tb.v	/^	wire[6:0] w_seg;$/;"	n
 w_v	gate_construct/gate_construct_tb.v	/^	wire w_v;$/;"	n
 w_xor_o	gate_construct/gate_construct.v	/^	wire w_xor_o;$/;"	n
