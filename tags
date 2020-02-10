@@ -4,18 +4,30 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+M	function.v	/^	parameter M = 4;$/;"	c
 N	counter.v	/^	parameter N = 4;$/;"	c
+N	function.v	/^	parameter N = 15;$/;"	c
 N	mux.v	/^	parameter N = 8;$/;"	c
 a	muxtwo.v	/^	input a, b, s;$/;"	p
 b	muxtwo.v	/^	input a, b, s;$/;"	p
+cal_num_one	function.v	/^	task cal_num_one;$/;"	t
 cin	counter.v	/^	input reset, cin, clk;$/;"	p
 clk	counter.v	/^	input reset, cin, clk;$/;"	p
 counter	counter.v	/^module counter(q, cout, reset, cin, clk);$/;"	m
 cout	counter.v	/^	output cout;$/;"	p
+data	function.v	/^		input[N:0] data;$/;"	p
+data_one	function.v	/^	reg[N:0] data_one;$/;"	r
+data_two	function.v	/^	reg[N:0] data_two;$/;"	r
+function_app	function.v	/^module function_app();$/;"	m
+i	function.v	/^		integer i, j;$/;"	r
 in0	mux.v	/^	input[N:1] in0, in1;$/;"	p
 in1	mux.v	/^	input[N:1] in0, in1;$/;"	p
+j	function.v	/^		integer i, j;$/;"	r
 mux	mux.v	/^module mux(out, in0, in1, sel);$/;"	m
 muxtwo	muxtwo.v	/^module muxtwo(out, a, b, s);$/;"	m
+num_one	function.v	/^		output[M:0] num_one;$/;"	p
+num_one	function.v	/^	reg[M:0] num_one;$/;"	r
+num_two	function.v	/^	reg[M:0] num_two;$/;"	r
 out	mux.v	/^	output[N:1] out;$/;"	p
 out	muxtwo.v	/^	output out;$/;"	p
 out	muxtwo.v	/^	reg out;$/;"	r

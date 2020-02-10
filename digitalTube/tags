@@ -1,0 +1,17 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+i_data	seg_display.v	/^		input[3:0] i_data,$/;"	p
+input	seg_display.v	/^		input i_dp,$/;"	p
+o_seg	seg_display.v	/^		output[6:0] o_seg,$/;"	p
+output	seg_display.v	/^		output o_dp$/;"	p
+r_data	seg_display_tb.v	/^	reg[3:0] r_data;$/;"	r
+r_dp	seg_display_tb.v	/^	reg r_dp;$/;"	r
+r_seg	seg_display.v	/^	reg[6:0] r_seg;$/;"	r
+seg_display	seg_display.v	/^module seg_display$/;"	m
+seg_display_tb	seg_display_tb.v	/^module seg_display_tb;$/;"	m
+w_dp	seg_display_tb.v	/^	wire w_dp;$/;"	n
+w_seg	seg_display_tb.v	/^	wire[6:0] w_seg;$/;"	n
