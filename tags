@@ -13,28 +13,65 @@ b	muxtwo.v	/^	input a, b, s;$/;"	p
 cal_num_one	function.v	/^	task cal_num_one;$/;"	t
 cin	counter.v	/^	input reset, cin, clk;$/;"	p
 clk	counter.v	/^	input reset, cin, clk;$/;"	p
+coder10to4	coder/coder10to4.v	/^module coder10to4$/;"	m
 counter	counter.v	/^module counter(q, cout, reset, cin, clk);$/;"	m
 cout	counter.v	/^	output cout;$/;"	p
 data	function.v	/^		input[N:0] data;$/;"	p
 data_one	function.v	/^	reg[N:0] data_one;$/;"	r
 data_two	function.v	/^	reg[N:0] data_two;$/;"	r
+decoder10to4	coder/decoder4to10.v	/^module decoder10to4$/;"	m
 function_app	function.v	/^module function_app();$/;"	m
+gate_construct	gate_construct/gate_construct.v	/^module gate_construct$/;"	m
+gate_construct_tb	gate_construct/gate_construct_tb.v	/^module gate_construct_tb;$/;"	m
 i	function.v	/^		integer i, j;$/;"	r
+i_a	gate_construct/gate_construct.v	/^		input i_a,$/;"	p
+i_c	gate_construct/gate_construct.v	/^		input i_c,$/;"	p
+i_data	coder/coder10to4.v	/^		input[9:0] i_data,$/;"	p
+i_data	coder/decoder4to10.v	/^		input[3:0] i_data,$/;"	p
+i_data	digitalTube/seg_display.v	/^		input[3:0] i_data,$/;"	p
+i_e	gate_construct/gate_construct.v	/^		input i_e,$/;"	p
 in0	mux.v	/^	input[N:1] in0, in1;$/;"	p
 in1	mux.v	/^	input[N:1] in0, in1;$/;"	p
+input	digitalTube/seg_display.v	/^		input i_dp,$/;"	p
+input	gate_construct/gate_construct.v	/^		input i_b,$/;"	p
+input	gate_construct/gate_construct.v	/^		input i_d,$/;"	p
 j	function.v	/^		integer i, j;$/;"	r
 mux	mux.v	/^module mux(out, in0, in1, sel);$/;"	m
 muxtwo	muxtwo.v	/^module muxtwo(out, a, b, s);$/;"	m
 num_one	function.v	/^		output[M:0] num_one;$/;"	p
 num_one	function.v	/^	reg[M:0] num_one;$/;"	r
 num_two	function.v	/^	reg[M:0] num_two;$/;"	r
+o_seg	digitalTube/seg_display.v	/^		output[6:0] o_seg,$/;"	p
 out	mux.v	/^	output[N:1] out;$/;"	p
 out	muxtwo.v	/^	output out;$/;"	p
 out	muxtwo.v	/^	reg out;$/;"	r
+output	coder/coder10to4.v	/^		output[3:0] o_code$/;"	p
+output	coder/decoder4to10.v	/^		output[9:0] o_decode;$/;"	p
+output	digitalTube/seg_display.v	/^		output o_dp$/;"	p
+output	gate_construct/gate_construct.v	/^		output o_y$/;"	p
 q	counter.v	/^	output[N:1] q;$/;"	p
 q	counter.v	/^	reg[N:1] q;$/;"	r
+r_a	gate_construct/gate_construct_tb.v	/^	reg r_a;$/;"	r
+r_b	gate_construct/gate_construct_tb.v	/^	reg r_b;$/;"	r
+r_c	gate_construct/gate_construct_tb.v	/^	reg r_c;$/;"	r
+r_cnt	gate_construct/gate_construct_tb.v	/^	reg[4:0] r_cnt;$/;"	r
+r_coder	coder/coder10to4.v	/^	reg[3:0] r_coder;$/;"	r
+r_d	gate_construct/gate_construct_tb.v	/^	reg r_d;$/;"	r
+r_data	digitalTube/seg_display_tb.v	/^	reg[3:0] r_data;$/;"	r
+r_decode	coder/decoder4to10.v	/^	reg[9:0] r_decode;$/;"	r
+r_dp	digitalTube/seg_display_tb.v	/^	reg r_dp;$/;"	r
+r_e	gate_construct/gate_construct_tb.v	/^	reg r_e;$/;"	r
+r_seg	digitalTube/seg_display.v	/^	reg[6:0] r_seg;$/;"	r
 reset	counter.v	/^	input reset, cin, clk;$/;"	p
 s	muxtwo.v	/^	input a, b, s;$/;"	p
+seg_display	digitalTube/seg_display.v	/^module seg_display$/;"	m
+seg_display_tb	digitalTube/seg_display_tb.v	/^module seg_display_tb;$/;"	m
 sel	mux.v	/^	input sel;$/;"	p
 str	string.v	/^	reg[19*8:1] str;$/;"	r
 string_test	string.v	/^module string_test;$/;"	m
+w_and_o	gate_construct/gate_construct.v	/^	wire w_and_o;$/;"	n
+w_dp	digitalTube/seg_display_tb.v	/^	wire w_dp;$/;"	n
+w_or1_o	gate_construct/gate_construct.v	/^	wire w_or1_o;$/;"	n
+w_seg	digitalTube/seg_display_tb.v	/^	wire[6:0] w_seg;$/;"	n
+w_v	gate_construct/gate_construct_tb.v	/^	wire w_v;$/;"	n
+w_xor_o	gate_construct/gate_construct.v	/^	wire w_xor_o;$/;"	n
